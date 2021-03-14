@@ -88,14 +88,15 @@ METHOD pode ser GET ou POST, GET mostra o "codigo no brownser e o POST nao"-->
 
     <input type="text" name="usuario"/> texto <br> <!--TEXT se usa pra textos-->
     <input type="password" name="senha"> SENHA<!--Campo de senha, ele omite os caracteres digitados--> <br>
-    <input type="email" name="email"/> Email <!--Usado para o usuario digitar um e-mail valido--> <br>
+    <input type="email" name="email" required/> Email <!--Usado para o usuario digitar um e-mail valido--> <br>
    <label><input type="checkbox" name="termo"/> Eu aceito os termos.</label><br><!--Usado pra qndo o usuario precisa "tickar", exemplo: Termos e condições-->
     <input type="radio" name="SEXO"/> <!--RADIO deve ser usado em dupla, qndo se deve selcionar entre um ou outro-->
     <input type="radio" name="SEXO"/> <!--EXEMPLO seletor de sexo M / F, cada grupo deve ter o mesmo NAME-->
     <input type="submit" value="formulario"/> <!--SUBMIT é o botao que da o comando de envio do formulario--><br>
     <!--No caso do SUBMIT, usar VALUE, pra dar o nome que o "botao" vai receber-->
 
-    <!--IMPORTANTE -->
+    <!--IMPORTANTE  a função REQUIRED (PODE SER USADA EM DIFERENTES INPUTS) sinaliza que o formulario só será
+    enviado se tal "campo" for preenchido--> 
 
 
     <!-- Todos os INPUTS devem receber o NAME="" que sera o campo que vai receber oq o usurario digitar. exemplo
@@ -109,7 +110,10 @@ Mais tipos de INPUTS
     <input type="datetime-local"><br> <!--Seleciona data e Hora-->
     <input type="color"> <!--Selecionador de cor--><br>
     <input type="number">Numeros <!--Aceita apenas numeros--><br>
-    <input type="range"><!--Seletor de rolagem, exemplo: volume-->
+    <input type="range" min="" max=""><!--Seletor de rolagem, exemplo: volume, etc. Especificar min e max--> <br>
+    <input type="search" name="search">Pesquisa <!-- Usado para pesquisas--> <br>
+    <input type="url" name="url"> url <!--Aceita apenas URL-->
+
   <!--IMPORTANTE SABER QUE EXISTEM MUITOS OUTROS TYPES: month, week, time entre outros. Fazer pesquisa conforme necessidade-->
 
 <!-- <textarea> </textarea> Abre uma caixa de texto multi-linhas.--> <br>
