@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <meta charset="utf-8"> 
+        <title>formularios</title>
+
+    <style>
+    
+    </style>
+
+    </head>
+
+
+<body>
+<!-- Explicações pra se usar formulario, lista e tabelas-->
+
+
+
+<!--LISTAS-->
+
+a TAG pra se usar listas são 2 ordenadas <ol></ol> e desordenadas <ul></ul>, para ambas, os intes da lista
+se usa <Li></Li>.
+Lista ordenada
+<ol>
+    <li>item 1</li>
+    <li>item 2</li>
+</ol>
+lista desordenada
+<ul>
+    <li>item 1</li>
+    <li>item 2</li>
+</ul>
+
+<!--é possivel estilizar ambas as lista utilizando css-->
+
+<!--TABELAS-->
+
+para tabelas se usa a TAG <TABLE></TABLE>, tudo deve ficar dentro da abertura e fechamento de TABLE.
+a TAG de linhas é <tr></tr> e a TAG de Colunas é <td></td>. o Titulo da tabela deve ser feito com <th></th>
+exemplo de uma tabela 3x2:
+
+<table width="400" border="1"  > <!-- sempre definir espaçamento com o WIDTH-->
+
+    <tr>
+        <th>ITEM 1</th> <!--CABEÇALHO-->
+        <th>ITEM 2</th>
+    </tr>
+
+    <tr>
+        <td>item qualquer</td>
+        <td>item qualquer</td>
+    </tr>
+
+    <tr>
+        <td>item qualquer</td>
+        <td>item qualquer</td>
+    </tr>
+
+    <tr>
+        <td>item qualquer</td>
+        <td>item qualquer</td>
+    </tr>
+
+</table>
+
+<!--FORMULARIOS-->
+
+a tag pra se usar formulario é <form> </form> todo o item do formulario fica entre a abertura e o fechamento.
+
+<form action="" method="GET" ></form> <!--dentro de ACTION se coloca o destino que o formulario vai abrir/direcionar
+METHOD pode ser GET ou POST, GET mostra o "codigo no brownser e o POST nao"-->
+
+<form action="nome da pagina que eu quero abrir" method="GET">
+
+    <!-- SELECT é Usado quenado precisa selecionar uma opção -->
+
+    <select name="ordenacao"> <!-- NAME se da o nome desse select, pra caso se venha ter mais de um-->
+        <option value="item 1">caneta</option> <!-- cada uma das opçoes que o usario vai poder selecionar-->
+        <option value="item 2">estojo</option><!-- em VALUE se coloca o nome que o servidor vai ler-->
+        <option value="item 3" selected>lapis</option> <!--Se usar a opção SELECT as opções comecam pelo item referido-->
+    </select>
+
+    <br>
+
+    <!-- TIPOS DE INPUTS, input É UTILIZADO PRO USUARIO DIGITAR/PREENCHER DETERMINAS COISAS-->
+
+    <input type="text" name="usuario"/> texto <br> <!--TEXT se usa pra textos-->
+    <input type="password" name="senha"> SENHA<!--Campo de senha, ele omite os caracteres digitados--> <br>
+    <input type="email" name="email"/> Email <!--Usado para o usuario digitar um e-mail valido--> <br>
+   <label><input type="checkbox" name="termo"/> Eu aceito os termos.</label><br><!--Usado pra qndo o usuario precisa "tickar", exemplo: Termos e condições-->
+    <input type="radio" name="SEXO"/> <!--RADIO deve ser usado em dupla, qndo se deve selcionar entre um ou outro-->
+    <input type="radio" name="SEXO"/> <!--EXEMPLO seletor de sexo M / F, cada grupo deve ter o mesmo NAME-->
+    <input type="submit" value="formulario"/> <!--SUBMIT é o botao que da o comando de envio do formulario--><br>
+    <!--No caso do SUBMIT, usar VALUE, pra dar o nome que o "botao" vai receber-->
+
+    <!--IMPORTANTE -->
+
+
+    <!-- Todos os INPUTS devem receber o NAME="" que sera o campo que vai receber oq o usurario digitar. exemplo
+    PASSWORD, seria SENHA, pois ele vai digitar a SENHA, e assim por diante, a informação que eu quero colher, recebe o NAME-->
+</form>
+
+Mais tipos de INPUTS
+
+<form action="nome da pagina que o formulario vai abrir">
+    <input type="date"> <!--Selecionador de datas--><br>
+    <input type="datetime-local"><br> <!--Seleciona data e Hora-->
+    <input type="color"> <!--Selecionador de cor--><br>
+    <input type="number">Numeros <!--Aceita apenas numeros--><br>
+    <input type="range"><!--Seletor de rolagem, exemplo: volume-->
+  <!--IMPORTANTE SABER QUE EXISTEM MUITOS OUTROS TYPES: month, week, time entre outros. Fazer pesquisa conforme necessidade-->
+
+<!-- <textarea> </textarea> Abre uma caixa de texto multi-linhas.--> <br>
+
+<textarea name="descricao" id="" cols="30" rows="10"></textarea>
+<br> <!--cols e rows, determian colunas e linhas, mas o correto é se usar um width e height, expressos em px-->
+
+ <!--Tambem existe a TAG <BUTTon>nome do botao </BUTTon> que é similar ao Input Submit -->
+
+ <button>Botao de exemplo</button>
+
+<!--Utilizar LABEL pra indicar os campos ao usuario, pois o label direciona a caixa de texto ou item correspondete.-->
+</form>
+
+</body>
+</html>
