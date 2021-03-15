@@ -38,3 +38,14 @@ button {
     background-color: #eee;
 
 }
+
+.test{
+    width: 600px;
+    height: 400px;
+    background-color: red;
+}
+
+@media  only screen and (max-width:400px){
+.test{ 
+    background-color: green;}
+}
