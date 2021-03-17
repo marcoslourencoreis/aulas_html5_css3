@@ -1,51 +1,58 @@
 
 * {
-  margin: 10px;
+  margin: 0px;
 }
 
-body {
-    margin: 20px;
+.topo {
+    width:800px;
+    height:100px;
+    margin:auto;
 }
 
-label {
-    display: block;
-    margin-bottom: 20px;
-}
-
-input[type=text], textarea, select {
-    padding: 10px;
-    width: 500px;
-    font-size: 15px;
-    border: 1px solid #ccc;
-    outline: 0;
-    margin-top: 5px;
-}
-
-textarea {
-    height: 200px;
-    resize: none;
-}
-
-.termoslink {
-    color: black;
-    text-decoration: none;
-}
-
-button {
-    padding: 10px;
-    font-size: 15px;
-    border: 1px solid #ccc;
+.logo {
+    width:50%;
+    height:100px;
+    float: left;
     background-color: #eee;
-
 }
 
-.test{
-    width: 600px;
-    height: 400px;
-    background-color: red;
+.menu {
+    width: 50%;
+    height: 100px;
+    float: left;
+    background-color: #ddd;
 }
 
-@media  only screen and (max-width:400px){
-.test{ 
-    background-color: green;}
+.corpo {
+    width: 800px;
+    height: 200px;
+    margin: auto;
+    background-color: #ccc;
+}
+
+.rodape {
+    width: 800px;
+    height: 100px;
+    margin: auto;
+    background-color: #ddd;
+}
+
+@media only screen and (max-width:700px) {
+    .topo {
+        height: 200px;
+        width: 300px;
+    }
+    .logo {
+        width: 100%;
+    }
+    .menu {
+        width: 100%;
+    }
+    .corpo {
+        width: 300px;
+    }
+    .rodape {
+        width: 300px;
+    }
+
 }
