@@ -91,8 +91,8 @@ METHOD pode ser GET ou POST, GET mostra o "codigo no brownser e o POST nao"-->
     <input type="text" name="usuario" placeholder="digite seu texto" autofocus/> texto <br> <!--TEXT se usa pra textos-->
     <input type="password" name="senha" maxlength="6"> SENHA<!--Campo de senha, ele omite os caracteres digitados--
         maxlength - te permite limitar o Nº de caracteres que o usuario pode digitar.> --><br>
-   
-    <input type="email" name="email" required/> Email <!--Usado para o usuario digitar um e-mail valido--> <br>
+   <!--Autocomplete- é usado pra que o navegador memorize textos ja digitados e sugira para o usuario como complemento da digitacao-->
+    <input type="email" name="email" autocomplete="on" required/> Email <!--Usado para o usuario digitar um e-mail valido--> <br>
    <label><input type="checkbox" name="termo"/> Eu aceito os termos.</label><br><!--Usado pra qndo o usuario precisa "tickar", exemplo: Termos e condições-->
     <input type="radio" name="SEXO"/> <!--RADIO deve ser usado em dupla, qndo se deve selcionar entre um ou outro-->
     <input type="radio" name="SEXO"/> <!--EXEMPLO seletor de sexo M / F, cada grupo deve ter o mesmo NAME-->

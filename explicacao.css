@@ -1,0 +1,14 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0;
+}
+
+/* O conjunto acima zera a margin e o padding de todo o restante, tirando os padrões pre configurados */
+
+.t {
+    border-radius: ; /*Border radius serve para arredondar as bordas de determniado elemento */ 
+}
+.t, :hover /* hover é usado quando queremos que determinada  coisa aconteça ao passarmos o mouse pelo elemento*/ 
+
