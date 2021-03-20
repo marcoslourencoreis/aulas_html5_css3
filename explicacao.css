@@ -12,3 +12,13 @@
 }
 .t, :hover /* hover é usado quando queremos que determinada  coisa aconteça ao passarmos o mouse pelo elemento*/ 
 
+.t {
+    background: linear-gradient(black, blue); /* liner=gradient é usado pra se fazer uma cor gradiente no elemento 
+    selecionado, tbm poder ser dado a direção da execução. > em graus (-90deg, cores etc..) */ 
+    text-shadow: 5px 5px 10px green; /* Text-shadow é utilizado pra colocar sombra em textos (dir, dir, esfumaçamento e cor)*/ 
+    box-shadow: 4px 4px 5px blue; /* box é usado pra sombrear elementos (direcao, direcao, esfumacamento, cor)*/
+    transition: all 1s linear; /* faz com q mudanças sejam mais suaves, como uma mudança de cor atraves do hover, por exemplo.*/
+    word-wrap: break-word; /* faz com que palavras muito grandes n ultrapassem o limite da div e quebre pra linha de baixo*/ 
+    
+}
+
