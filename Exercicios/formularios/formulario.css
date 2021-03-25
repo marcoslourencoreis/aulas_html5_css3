@@ -1,0 +1,64 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-image: url(./q7.png);
+    background-size: cover;
+    
+}
+
+.formulario {
+    width: 400px;
+    margin: auto;
+    background-color: #ccc;
+    border-radius: 20px;
+    opacity: 0.91;
+}
+
+legend {
+    font-size: 40px;
+    text-shadow: rgb(43, 41, 41) 2px 2px 10px;
+}
+
+.form {
+      margin: 20px;
+}
+
+label {
+    display: block;
+    margin: 15px;
+}
+
+div input[type=submit] {
+    background-color: rgb(88, 88, 88);
+    color:#000;  
+    padding: 10px;
+    margin-left: 30%;
+    margin-bottom: 14px;
+    
+}
+
+div input[type=submit]:hover {
+    color: white;
+    transition: 2s;
+}
+
+textarea {
+    width: 400px;
+    resize: none;
+    height: 100px;
+}
+
+select {
+    width: 300px;
+}
+
+input[type=email] , input[type=text] {
+    width: 300px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
