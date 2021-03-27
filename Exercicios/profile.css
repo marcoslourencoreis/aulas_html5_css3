@@ -1,0 +1,135 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    background-color: black;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+    
+    }
+
+.menu{
+    display: flex;
+    list-style: none;
+   
+    
+    flex-wrap: wrap;
+ }
+
+ .menu li {
+     margin: 10px;
+     padding: ;
+     text-decoration: none;
+     flex-wrap: wrap;
+ }
+
+ .menu li a {
+     display: block;
+     padding: 20px;
+     font-size: 30px;
+ }
+
+.foto img { 
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-size: cover;
+    }
+
+    /* CORPO DA PAGINA*/
+
+    .container {
+        display: grid;
+        margin: 5px;
+        border: 1px solid black;
+        grid-template-areas: 
+        "logo nav nav"
+        "projects projects projects"
+        "skills skills skills"
+        "footer footer footer"
+        ;
+    }
+
+    .container > div {
+       
+       
+    }
+
+.logo {
+    grid-area: logo;
+    background-color: black;
+    padding: 10px;
+}
+
+
+.nav {
+    grid-area: nav;
+    background-color: black;
+    gap: 0px;
+}
+
+.projects {
+    grid-area: projects;
+    background-color: blueviolet;
+}
+
+.skills {
+    grid-area: skills;
+    background-color: chocolate;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: cyan;
+    }
+
+    /* Container treinamento */ 
+
+    .container2 {
+     display: grid;
+     grid-template-areas: 
+     "a a b c"
+     "d e e c"
+        
+     ;
+    }
+
+    .container2 div {
+        background: darkgreen;
+        margin: 5px;
+        
+    }
+
+  
+
+    .a1 {
+        grid-area: a;
+    }
+
+    .a2 {
+        grid-area: b;
+    }
+
+    .a3 {
+        grid-area: c;
+    }
+
+    .a4 {
+        grid-area: d;
+    }
+
+    .a5 {
+        grid-area: e;
+    }
+
+    
