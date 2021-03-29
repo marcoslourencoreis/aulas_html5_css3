@@ -107,6 +107,7 @@ header {
     .container2 div {
         background: darkgreen;
         margin: 5px;
+        width: 1fr;
         
     }
 
