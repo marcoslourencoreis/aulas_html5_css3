@@ -1,0 +1,49 @@
+/* TRABALHANDO COM OBJECT-FIT */
+
+img {
+    width: 400px;    /* estou definindo o tamanho do display da foto, uma foto maior será destorcida, pra que isso n ocorra
+                      utilizamos o OBJECT-FIT e suas propriedades. */
+    height: 400px;
+    margin-bottom: 40px;
+    object-fit: contain;
+}
+
+    /* Atributos são:
+
+    FILL - é a opção padrão, ela vai destorcer a imagem pra caber no display.(width/height)
+
+    CONTAIN - Redimensiona a imagem de forma que ela caiba no display, porem deixara uma "borda vazia de espaço, pois
+    ela redimensiona sem distorcer.
+
+    COVER - Utiliza todo o espaço do display sem distorcer, mas pra isso, ele "foca no centro da img" o que n couber no
+    display, é cortado, e ele redimensiona pra caber;
+
+    NONE: UTILIZA o tamanho do display, mas n redimensiona, simpleste corta as partes que não cabem, usando como base
+    o tamanho original da foto.*/
+
+
+    /* TRABALHANDO COM @MEDIA */
+
+body {
+    background-color: green;
+}
+
+
+@media (max-width: 700px) {
+    body {
+        background-color: red;
+    }
+}
+
+/*Se define a condição dentro de () depois abre com { e chama o elemento a ser alterado, no exemplo foi o BODY e se abre o { do body, coloca os atributos a serem modificados no caso foi o BACKGROUND, E DEPOIS FECHA } DO ELEMENTO E POR ULTIMO FECHA O } DO MEDIA.
+
+PODE ser alterados varios atributos, H1 etc... basta chamar a tag e dar a orientação do que ser feito quando a função que foi definida em (), for atingida.*/
+
+/*Pra colocar mais de uma condição, usamos AND entro as deinições que estão dentro do ( ) - exemplo: */
+
+@media (min-width:701px) and (max-width: 1000px) {
+body {
+    background-color: grey;
+    }
+}
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+  <link rel="stylesheet" href="midias.css">  
+  
+    <title>midias</title>
+</head>
+
+<body>
+
+    <!-- VIDEOS E AUDIO-->
+    
+    <video width="320" height="240"controls> <!--Definir largura e altura que o display vai ter, deve ser definido direto na TAG e não no CSS-->
+
+        <source src="../../../Projota - Marieva (Vertical Video).webm" type="video/webm"/>
+    </video>
+
+    <!--FOTOS-->
+<br>
+para que se mude entre as fotos de acordo com o tamanho da dela. se usa a tag PICTURE e dentro de PICTURE se usa SOURCE,
+conforme o codigo a seguir.
+
+<picture>
+    <source media="(min-width:650px)" srcset="../Arthur/Arthur_img/body.JPG"> <!--DE 650px pra + é essa que apareceu-->
+    <source media="(min-width:450px)" srcset="../Arthur/Arthur_img/car.JPG">  <!--de 450 até 649px, é essa que aparece-->
+        <img src="../Arthur/Arthur_img/coco_costas.JPG" alt=""> <!-- a foto que ficar dentro do IMG é a que vai ser mostrada
+            como menor tamanho.-->
+</picture>
+
+<br>
+trabalhando com OBJECT FIT
+
+é usado no CSS
+
+ <img src="../Arthur/Arthur_img/logo.jpg" alt="">
+
+Trabalhando com @media no CSS <br>
+
+
+
+</body>
+</html>
