@@ -26,6 +26,7 @@ img {
 
 body {
     background-color: green;
+    display: flex;
 }
 
 
@@ -47,3 +48,21 @@ body {
     }
 }
 
+/* @MEDIA ORIENTATION identifica se o disposito (display) está marjoritariamente na vertical (PORTRAIT) ou na horizontal (LANDSCAPE),E executa as funções conforme os comandos solicitados. */ 
+
+@media (orientation:landscape) {
+body { 
+    flex-direction: row;
+ 
+
+}
+
+}
+
+@media (orientation:portrait){
+body {
+    flex-direction: column;
+    
+}
+
+}
