@@ -26,7 +26,7 @@ img {
 
 body {
     background-color: green;
-    display: flex;
+    display: block;
 }
 
 
@@ -65,4 +65,10 @@ body {
     
 }
 
+}
+
+/* SELETOR DE ITENS, chama o elemento no caso DIV (pode ser outro) e depois :nth-child( aqui dentro vai o numero do elemento ) */ 
+
+div:nth-child(2) {
+    background-color: #ccc;
 }
