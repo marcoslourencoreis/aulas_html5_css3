@@ -72,3 +72,13 @@ body {
 div:nth-child(2) {
     background-color: #ccc;
 }
+
+/*BEFORE e AFTER - Usados pra aparecer antes (before) ou depois (AFTER) do elemento selecionado. vide exemplo */
+
+.before::before {
+    content:"teste do before "; /* é obrigatorio utilizar content, dentro de " " que se define o que vai aparecer, no exemplo ficou => */
+}
+
+.before::after {
+    content: "teste do after ";
+}
