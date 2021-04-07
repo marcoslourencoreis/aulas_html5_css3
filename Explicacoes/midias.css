@@ -82,3 +82,13 @@ div:nth-child(2) {
 .before::after {
     content: "teste do after ";
 }
+
+/*Seletor por atributo, para selecionar o lemento pelo atributo, ele deve ser posto dentro de [ ], se se usa espaço antes de [ ] */
+
+input[type=text] { /*Pode tanto expecificar o elemento, no caso INPUT, que tbm poderia ser class ou ID */
+    background-color: #15ff00;
+}
+
+[required] { /*Como pode chamar direto o atributo dentro de [], no caso usamos o REQUIRED */
+    background-color: blue;
+}
