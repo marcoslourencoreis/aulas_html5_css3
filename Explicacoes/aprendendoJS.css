@@ -1,0 +1,18 @@
+#container {
+    border: solid 1px black;
+    width: 200px;
+    height: 200px;
+    margin: 40px;
+}
+
+.verde {
+    background-color: green;
+}
+
+.azul {
+    background-color: blue;
+}
+
+.vermelho {
+    background-color: red;
+}
