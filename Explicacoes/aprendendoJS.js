@@ -28,9 +28,28 @@ function red() {
     document.querySelector("#container").classList.add("vermelho");
 }
 
+
 function blue() {
     document.querySelector("#container").classList.remove("verde");
     document.querySelector("#container").classList.remove("vermelho");
     document.querySelector("#container").classList.add("azul");
 }
 
+
+function somar (x, y) {
+    let total = x + y;
+    return total;
+}
+
+// Manipulando Imagens com JS
+
+function trocarImagem(filename, animalName) {
+    document.querySelector('.imagem').setAttribute('src', './'+filename);
+    document.querySelector('.imagem').setAttribute('data-animal', animalName);
+
+}
+
+function qualAnimal(){
+    let animal = document.querySelector('.imagem').getAttribute('data-animal');
+    alert("O Animal é: " + animal);
+}

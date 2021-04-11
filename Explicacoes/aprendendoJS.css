@@ -16,3 +16,11 @@
 .vermelho {
     background-color: red;
 }
+
+/*MAnipulando Imagens com JS */
+
+.imagem {
+    width: 300px;
+    height: 300px;
+  
+}
