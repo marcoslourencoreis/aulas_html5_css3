@@ -24,3 +24,18 @@
     height: 300px;
   
 }
+
+/*Criando botao scroll JS*/
+
+.buttom {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: #0000ff;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 999;
+    cursor: pointer;
+    display: none;
+}

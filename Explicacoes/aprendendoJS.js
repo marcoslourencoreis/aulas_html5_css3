@@ -53,3 +53,26 @@ function qualAnimal(){
     let animal = document.querySelector('.imagem').getAttribute('data-animal');
     alert("O Animal é: " + animal);
 }
+
+//Criando botao scroll JS
+
+function subirTela() {
+    window.scrollTo({
+        top:0,
+        behavior: 'smooth'
+    });
+}
+
+function scroll() {
+    if(window.scrollY === 0) {
+        document.querySelector('.buttom').style.display = 'none'; //Se usa STYLE pra acessar o CSS do elemento.
+    } 
+    else { document.querySelector('.buttom').style.display = 'block';
+    }
+}
+
+//criando função que verifica o scrol pra ativar ou nao a funcao criada acima.
+
+window.addEventListener('scroll',scroll);
+
+
