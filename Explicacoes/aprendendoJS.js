@@ -17,8 +17,8 @@
 // document.querySelectorAll (" ") Seleciona todos os elementos do seguimento selecionado.
 
 function green() {
-    document.querySelector("#container").classList.remove("azul");
-    document.querySelector("#container").classList.remove("vermelho"); 
+    document.querySelector("#container").classList.remove("azul"); //classList é referente a classe do elemento, no caso de #Container
+    document.querySelector("#container").classList.remove("vermelho"); //A classe foi criada em CSS e adicionada ao elemento pelo JS
     document.querySelector('#container').classList.add('verde');
 }
 
@@ -35,15 +35,21 @@ function blue() {
     document.querySelector("#container").classList.add("azul");
 }
 
+function remove() {
+        document.querySelector("#container").classList.remove("verde");
+        document.querySelector("#container").classList.remove("vermelho");
+        document.querySelector("#container").classList.remove("azul");
+}
+
 
 function somar (x, y) {
     let total = x + y;
-    return total;
+    return total; // é important usar o return pra que ele guarde o valor da variavel desejada, pra que assim possamos usa-la
 }
 
 // Manipulando Imagens com JS
 
-function trocarImagem(filename, animalName) {
+function trocarImagem(filename, animalName) { //os nomes que eu der dentro de()vao representar os atributos colocados no HTML respectivo
     document.querySelector('.imagem').setAttribute('src', './'+filename);
     document.querySelector('.imagem').setAttribute('data-animal', animalName);
 
@@ -75,4 +81,22 @@ function scroll() {
 
 window.addEventListener('scroll',scroll);
 
+// Trabalhando com Eventos no TECLADO JS
+
+function digitou(e) {
+if(e.keyCode == 13){ // keycode representa o codigo da letra, cada letra do teclado tem seu respectivo codigo 13=ENTER
+ let texto = document.getElementById('campo').value;
+console.log(texto);
+} 
+}
+
+//treinando JS mostrar e ocultar telefone
+
+function mostrarTelefone() {
+    if(document.getElementById('telefone').style.display == "none") {
+        document.querySelector('#telefone').style.display = 'block'; 
+    } 
+    else { document.querySelector('#telefone').style.display = 'none';
+    }
+}
 

@@ -15,6 +15,7 @@
     <button onclick="red()">Vermelho</button>
     <button onclick="blue()">azul</button>
     <button onclick="green()">Verde</button>
+    <button onclick="remove()">Remove</button>
 
     <br> <br> <br>
  <!--Manipulando Imagem com JS-->
@@ -29,6 +30,19 @@
 <!--Criando botao Scroll JS-->
 
     <div onclick="subirTela()" class="buttom"></div>
+
+    <!--Trabalhando com Eventos no TECLADO jS-->
+
+    <br><br><br>
+    <input onkeyup="digitou(event)" type="text" id="campo" name="usuario" value="">  <!--EVENT faz mostrar os eventos em relacao ao atributo solicitato (onkeyup), tudo que for ONKEYUP, gera um evento e ele registra.-->
+
+    <!--treinando JS mostrar e ocultar telefone-->
+
+<br><br><br>
+<div id="telefone">(12) 9 8851-2110</div>
+<button onclick="mostrarTelefone(this)">Mostrar Telefone</button>
+
+
 
     <script src="aprendendoJS.js"></script>
 </body>
