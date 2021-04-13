@@ -1,6 +1,6 @@
 // Formas de selecionar os elementos:
 
-//Importante repeitar letras maisculas e minusculas.
+//Importante respeitar letras maisculas e minusculas.
 
 // document.getElementByID("nome do ID")    Seleciona pelo ID
 // document.getElementsByClassName("nome da class")   Seleciona pela Class
@@ -13,8 +13,15 @@
 //No codigo acima o q vai dentro de [ ] é o numero do elemento, contagem começa em 0, e após o innerHTML = " " - o que for colocado dentro de " " é que vai vir a substituir o elemento selecionado.
 
 
-// document.querySelector(" ") com query podemos selecionar IDs, Classes. basta colocar . ou #
-// document.querySelectorAll (" ") Seleciona todos os elementos do seguimento selecionado.
+// document.querySelector(" ")  ... com query podemos selecionar IDs, Classes. basta colocar . ou #
+// document.querySelectorAll (" ") ... Seleciona todos os elementos do seguimento selecionado.
+
+
+
+
+//Alterando a classe de um elemento / mudando o background.
+
+
 
 function green() {
     document.querySelector("#container").classList.remove("azul"); //classList é referente a classe do elemento, no caso de #Container
@@ -42,12 +49,28 @@ function remove() {
 }
 
 
+
+
+
+//aprendendo sobre return
+
+
+
+
 function somar (x, y) {
     let total = x + y;
     return total; // é important usar o return pra que ele guarde o valor da variavel desejada, pra que assim possamos usa-la
 }
 
+
+
+
+
 // Manipulando Imagens com JS
+
+
+
+
 
 function trocarImagem(filename, animalName) { //os nomes que eu der dentro de()vao representar os atributos colocados no HTML respectivo
     document.querySelector('.imagem').setAttribute('src', './'+filename);
@@ -60,12 +83,19 @@ function qualAnimal(){
     alert("O Animal é: " + animal);
 }
 
+
+
+
 //Criando botao scroll JS
 
+
+
+
+
 function subirTela() {
-    window.scrollTo({
+    window.scrollTo({ // da a direção do Scroll
         top:0,
-        behavior: 'smooth'
+        behavior: 'smooth' // comportamento = suave
     });
 }
 
@@ -77,7 +107,15 @@ function scroll() {
     }
 }
 
+
+
+
+
 //criando função que verifica o scrol pra ativar ou nao a funcao criada acima.
+
+
+
+
 
 window.addEventListener('scroll',scroll);
 
@@ -90,13 +128,51 @@ console.log(texto);
 } 
 }
 
+
+
+
 //treinando JS mostrar e ocultar telefone
 
+
+
+
 function mostrarTelefone() {
-    if(document.getElementById('telefone').style.display == "none") {
+    if( document.getElementById('telefone').style.display == 'none') {
         document.querySelector('#telefone').style.display = 'block'; 
     } 
     else { document.querySelector('#telefone').style.display = 'none';
     }
 }
+mostrarTelefone(); // Executando a Funcção
 
+
+// Arrays em JS - Arrays sao um conjunto de informações dentro de uma mesma variavel
+
+let ingredientes = [ 'arroz', 'macarrao', 'feijao'];//o Array é identificado por [] e cada item deve ficar dentro de '' e separado por ,
+
+let ingredientes2 = [
+    ['pao', 'farinha', 'trigo'], // é possivel ter array dentro de array, seja quantas forem, mas deve separar cada [] com ,
+    ['ovos', 'oleo', 'vinagre']
+];
+
+console.log(ingredientes2 [1][0]); // o primeiro [1] representa o array dos ovos e o [0] representa o item dentro deste array. contagem começa sempre em 0. 
+
+//Objetos em JS
+
+//Objetos sao semalhantes a arrays, podem receber mais de uma propriedade, mas ele é nominal e não numeral e se abre com {}
+
+let carro = {
+    montadora: 'fiat', // usa-se : e depois se coloca em '' e separa por ,
+    modelo: 'uno',
+    ano: '2010',
+    ligar:function(){ //é possivel criar funções dentro de objetos e tbm em arrays.No caso o nome vem antes de function= ligar:function()
+        console.log('O carro Ligou')
+    }
+};
+
+console.log("modelo: " + carro ['modelo']); // pra mostrar eu chamo pelo nome que eu dei, no caso quero que apareça UNO que dei nome de MODELO.
+console.log(carro.ano); // Tambem é possivel acessar atraves do . (ponto) exemplo: (carro.ano) > carro representa o objeto e ano, o valor que quero acessar dentro de objeto.
+
+console.log("ANO: "+ carro.ano); // Tambem é possivel concatenar pra que tenha uma Sring + o valor que queremos acessar.
+
+carro.ligar(); // pra acessar a função primeiro eu chamo o objeto (carro) e depois a função que eu quero, no caso foi ligar. ficando: carro.ligar();
