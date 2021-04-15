@@ -157,7 +157,14 @@ let ingredientes2 = [
 
 console.log(ingredientes2 [1][0]); // o primeiro [1] representa o array dos ovos e o [0] representa o item dentro deste array. contagem começa sempre em 0. 
 
+
+
+
 //Objetos em JS
+
+
+
+
 
 //Objetos sao semalhantes a arrays, podem receber mais de uma propriedade, mas ele é nominal e não numeral e se abre com {}
 
@@ -176,3 +183,41 @@ console.log(carro.ano); // Tambem é possivel acessar atraves do . (ponto) exemp
 console.log("ANO: "+ carro.ano); // Tambem é possivel concatenar pra que tenha uma Sring + o valor que queremos acessar.
 
 carro.ligar(); // pra acessar a função primeiro eu chamo o objeto (carro) e depois a função que eu quero, no caso foi ligar. ficando: carro.ligar();
+
+
+// APRENDENDO SWITCH - SWITCH é similar ao IF, porem ele é mais usado quanto se precisa mais de uma opção pra uma mesma varialvel.
+
+
+
+let dia = 6;
+let diaNome = "";
+
+switch(dia) { // Após SWITCH, dentro de () colocamos a variavel que vai ser verificada.
+    case 1: // cada verificação se coloca em case, após case o nome que ela vai representar e depois o valor que vai receber.
+        diaNome = 'Segunda-Feira';
+        
+        break; // Todo case, deve ter seu break subsequente.
+    case 2:
+        diaNome = 'Terça-Feira';
+
+    case 3:
+        diaNome = 'Quarta-Feira';
+        
+        break;
+    case 4:
+        diaNome = 'Quinta-Feira';
+
+    case 5:
+        diaNome = 'Sexta-Feira';
+        
+        break;
+    case 6:
+        diaNome = 'Sábado';
+
+    case 7:
+        diaNome = 'Domingo';
+        
+        break;
+}
+
+document.getElementById('dia').innerHTML =  "hoje é: "+diaNome;
