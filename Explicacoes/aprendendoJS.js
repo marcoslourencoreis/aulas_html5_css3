@@ -222,10 +222,14 @@ switch(dia) { // Após SWITCH, dentro de () colocamos a variavel que vai ser ver
 
 document.getElementById('dia').innerHTML =  "hoje é: "+diaNome;
 
-${}; // Também é uma forma de uso pra "somar" e "concatenar".
+// ${}; // Também é uma forma de uso pra "somar" e "concatenar".
 
 Number() // forma de transformar variavei em numeros, ele converte automaticamente para reais ou inteiros. substitui o int e Float.
 
 Number.parseFloat(); // Transforma a variavel em numero real
 Number.parseInt(); // Transforma a variavel em numero Inteiro
 toString() // transforma a variavel em String
+
+
+
+//Aprendendendo Ternario em JS
