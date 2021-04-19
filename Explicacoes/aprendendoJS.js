@@ -185,7 +185,12 @@ console.log("ANO: "+ carro.ano); // Tambem é possivel concatenar pra que tenha 
 carro.ligar(); // pra acessar a função primeiro eu chamo o objeto (carro) e depois a função que eu quero, no caso foi ligar. ficando: carro.ligar();
 
 
+
+
+
 // APRENDENDO SWITCH - SWITCH é similar ao IF, porem ele é mais usado quanto se precisa mais de uma opção pra uma mesma varialvel.
+
+
 
 
 
@@ -222,7 +227,7 @@ switch(dia) { // Após SWITCH, dentro de () colocamos a variavel que vai ser ver
 
 document.getElementById('dia').innerHTML =  "hoje é: "+diaNome;
 
-// ${}; // Também é uma forma de uso pra "somar" e "concatenar".
+ //${dia}; // Também é uma forma de uso pra "somar" e "concatenar".
 
 Number() // forma de transformar variavei em numeros, ele converte automaticamente para reais ou inteiros. substitui o int e Float.
 
@@ -232,7 +237,34 @@ toString() // transforma a variavel em String
 
 
 
-//Aprendendendo Ternario em JS
+// Aprendendo FOR e FOR ARRAY
 
-// Praticando JS - Guanabara
+
+
+let texto = "";
+
+
+// Dentro de () se coloca uma variavel auxilliar (i), que sera responsavel sobre a contagem do numero de repetições, em seguida se da a condição pelo qual ela vai se repetir e por ultimo a soma que i recebe
+
+
+for(let i = 1; i <= 5; i++) {
+ texto = texto + i + "<br/>";
+}
+
+document.getElementById("Demo").innerHTML = texto; 
+
+//FOR ARRAY
+
+let CarrosArray = ['Gol', 'Onix', 'ka']; // Criando o ARRAY
+
+let conteudo = "<ul>";
+
+for(let x in CarrosArray) { // o in, faz com que o x se repita pelo numero de conteudo que tenha em CarrosArray, no caso 3x(GOL ONIX KA)
+    conteudo += "<li>" + CarrosArray[x]  + "</li>"; // em CarrosArray[x] o x faz com que ele mostre cada elemento que foi definido em CarrosArray
+}
+
+conteudo += "</ul>"; 
+
+document.getElementById("DemoArray").innerHTML = conteudo; 
+
 
