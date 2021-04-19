@@ -233,3 +233,6 @@ toString() // transforma a variavel em String
 
 
 //Aprendendendo Ternario em JS
+
+// Praticando JS - Guanabara
+
