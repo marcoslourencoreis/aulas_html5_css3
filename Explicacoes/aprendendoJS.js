@@ -227,6 +227,12 @@ switch(dia) { // Após SWITCH, dentro de () colocamos a variavel que vai ser ver
 
 document.getElementById('dia').innerHTML =  "hoje é: "+diaNome;
 
+
+
+
+
+
+
  //${dia}; // Também é uma forma de uso pra "somar" e "concatenar".
 
 Number() // forma de transformar variavei em numeros, ele converte automaticamente para reais ou inteiros. substitui o int e Float.
@@ -237,7 +243,9 @@ toString() // transforma a variavel em String
 
 
 
-// Aprendendo FOR e FOR ARRAY
+
+
+// Aprendendo FOR 
 
 
 
@@ -251,9 +259,13 @@ for(let i = 1; i <= 5; i++) {
  texto = texto + i + "<br/>";
 }
 
-document.getElementById("Demo").innerHTML = texto; 
+document.getElementById("DemoFor").innerHTML = texto; 
 
-//FOR ARRAY
+
+
+
+
+// APRENDENDO FOR ARRAY
 
 let CarrosArray = ['Gol', 'Onix', 'ka']; // Criando o ARRAY
 
@@ -267,4 +279,54 @@ conteudo += "</ul>";
 
 document.getElementById("DemoArray").innerHTML = conteudo; 
 
+
+
+
+
+
+// Aprendendo loop WHILE - WHILE significa ENQUANTO
+
+let conteudo2 = '';
+let c = 0; // Eu defini um contator, por exemplo. Com o nome de C
+
+while(c <= 5)  // Enquanto esse contador (c) for menor ou = a 10, a condicao dentro de {} vai se repitir.
+        { conteudo2 += "Numero: " + c + "</br>";
+        c++;
+
+}
+
+document.getElementById("DemoWhile").innerHTML = conteudo2; 
+
+
+
+
+// Manipulando Strings
+
+
+let nome = "Marcos,Vinicius"
+
+let resultadoLength = nome.length; // Lenght mostra o numero de caracteres a STRING tem, incluindo os espaços.
+
+console.log(resultadoLength); 
+
+let resultadoIndexOF = nome.indexOf("Marcos"); // IndexOF identifica se o parametro colocado em " " se encontra na String e em qual posição. Começando de 0. Se ele n encontrar um resultado, a resposta é -1. 
+console.log(resultadoIndexOF);
+
+
+let resultadoReplace = nome.replace("Vinicius", "Reis"); // replace faz a subistituição. No primeiro parametro fazemos a busca e no segundo damos a substituição. Busquei vinicius e substitui por Reis. Se ele n achar, permanece a original.. *Se atentar a acentros e maiusculas/minusculas.
+console.log(resultadoReplace);
+
+let resultadoTrim = nome.trim(); // Função trim() remove os espaços dentro da String antes da primeira palavra e após a ultima. 
+    console.log(resultadoTrim);
+
+
+    // + FUNÇÕES pra usar em STRING
+
+
+nome.charAt(3) // CharAT mostra a letra que se encontra no parametro que colocar em () que no caso foi 3. mas lembrando que começa a contar em 0. logo 3 é a quarta letra.
+
+nome.substr(4, 2); // substr é usado com 2 paramentros ( ) o primeiro diz em que numero ele começa a procurar o caracter, no caso 3, e o segundo paramentro é quantos caracteres ele vai buscar, no caso 1. A resposta seria: OS - Começou na quinta letra e buscou 2 caracteres.
+
+let resultadoSplit= nome.split(" "); // Split transforma a STRING em ARRAY. o que estiver no parametro () é o que ele vai buscar pra dividir e transformar no conteudo do ARRAY. como usamos um espaço entre " " no paramentro, oq estiver antes e depois dos espaços vira elemento do array. No caso Marcos Vinicius - fica 1 array de 2 elementos [Marcos, Vinicius].
+console.log(resultadoSplit);
 
