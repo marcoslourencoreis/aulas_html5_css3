@@ -330,3 +330,10 @@ nome.substr(4, 2); // substr é usado com 2 paramentros ( ) o primeiro diz em qu
 let resultadoSplit= nome.split(" "); // Split transforma a STRING em ARRAY. o que estiver no parametro () é o que ele vai buscar pra dividir e transformar no conteudo do ARRAY. como usamos um espaço entre " " no paramentro, oq estiver antes e depois dos espaços vira elemento do array. No caso Marcos Vinicius - fica 1 array de 2 elementos [Marcos, Vinicius].
 console.log(resultadoSplit);
 
+//Ternario em JS
+
+var x = 8
+var varNum = x % 2 == 0 ? 'Par' : 'Impar' // após ? se coloca o resultado positivo e após : o negativo. Exemplo. Se o resto de 8/2 for = a 0, entao coloque PAR, se não, IMPAR.
+
+
+
