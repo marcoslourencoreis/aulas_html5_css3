@@ -235,14 +235,31 @@ document.getElementById('dia').innerHTML =  "hoje é: "+diaNome;
 
  //${dia}; // Também é uma forma de uso pra "somar" e "concatenar".
 
+ let numbersTeste = 10.6560
+ 
+
 Number() // forma de transformar variavei em numeros, ele converte automaticamente para reais ou inteiros. substitui o int e Float.
 
-Number.parseFloat(); // Transforma a variavel em numero real
-Number.parseInt(); // Transforma a variavel em numero Inteiro
-toString() // transforma a variavel em String
+Number.parseFloat(numbersTeste); // Transforma a variavel em numero real - a variavel que vai ser transformada é colocada dentro de ()
+Number.parseInt(numbersTeste); // Transforma a variavel em numero Inteiro - a variavel que vai ser transformada é colocada dentro de ()
+numbersTeste.toString() // transforma a variavel em String.numbersTeste.toString() // transforma a variavel em String.
+numbersTeste.toFixed(2) // dentro de () se coloca o numero de casa decimais que desejamos. no numero 10.65430, seria mostrado 10.65.
+numbersTeste.toString() // transforma a variavel em String.
+// manipulando Arrays
+
+let ArrayTeste = ['sapato', 'camisa', 'chapeu', 'boné'];
+console.log(ArrayTeste);
+
+let resArrayTeste = ArrayTeste;
+
+resArrayTeste = ArrayTeste.join('/'); // Manipula array, transformando ela em String e o que for colocado dentro de ("") sera o divisor de cada palavra.
+
+ArrayTeste.toString(); // Transforma o ARRAY em String, com cada palavra separado por virgula , .
+ArrayTeste.pop(); // Elimina o ultimo elemento do ARRAY.
+ArrayTeste.shift(); // Elimina o primeiro iten do ARRAY.
 
 
-
+console.log(resArrayTeste);
 
 
 // Aprendendo FOR 
@@ -329,6 +346,9 @@ nome.substr(4, 2); // substr é usado com 2 paramentros ( ) o primeiro diz em qu
 
 let resultadoSplit= nome.split(" "); // Split transforma a STRING em ARRAY. o que estiver no parametro () é o que ele vai buscar pra dividir e transformar no conteudo do ARRAY. como usamos um espaço entre " " no paramentro, oq estiver antes e depois dos espaços vira elemento do array. No caso Marcos Vinicius - fica 1 array de 2 elementos [Marcos, Vinicius].
 console.log(resultadoSplit);
+
+
+
 
 //Ternario em JS
 
