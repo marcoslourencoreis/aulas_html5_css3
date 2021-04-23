@@ -235,31 +235,7 @@ document.getElementById('dia').innerHTML =  "hoje é: "+diaNome;
 
  //${dia}; // Também é uma forma de uso pra "somar" e "concatenar".
 
- let numbersTeste = 10.6560
- 
 
-Number() // forma de transformar variavei em numeros, ele converte automaticamente para reais ou inteiros. substitui o int e Float.
-
-Number.parseFloat(numbersTeste); // Transforma a variavel em numero real - a variavel que vai ser transformada é colocada dentro de ()
-Number.parseInt(numbersTeste); // Transforma a variavel em numero Inteiro - a variavel que vai ser transformada é colocada dentro de ()
-numbersTeste.toString() // transforma a variavel em String.numbersTeste.toString() // transforma a variavel em String.
-numbersTeste.toFixed(2) // dentro de () se coloca o numero de casa decimais que desejamos. no numero 10.65430, seria mostrado 10.65.
-numbersTeste.toString() // transforma a variavel em String.
-// manipulando Arrays
-
-let ArrayTeste = ['sapato', 'camisa', 'chapeu', 'boné'];
-console.log(ArrayTeste);
-
-let resArrayTeste = ArrayTeste;
-
-resArrayTeste = ArrayTeste.join('/'); // Manipula array, transformando ela em String e o que for colocado dentro de ("") sera o divisor de cada palavra.
-
-ArrayTeste.toString(); // Transforma o ARRAY em String, com cada palavra separado por virgula , .
-ArrayTeste.pop(); // Elimina o ultimo elemento do ARRAY.
-ArrayTeste.shift(); // Elimina o primeiro iten do ARRAY.
-
-
-console.log(resArrayTeste);
 
 
 // Aprendendo FOR 
@@ -303,6 +279,8 @@ document.getElementById("DemoArray").innerHTML = conteudo;
 
 // Aprendendo loop WHILE - WHILE significa ENQUANTO
 
+
+
 let conteudo2 = '';
 let c = 0; // Eu defini um contator, por exemplo. Com o nome de C
 
@@ -315,7 +293,11 @@ while(c <= 5)  // Enquanto esse contador (c) for menor ou = a 10, a condicao den
 document.getElementById("DemoWhile").innerHTML = conteudo2; 
 
 
+//Ternario em JS
 
+
+var x = 8
+var varNum = x % 2 == 0 ? 'Par' : 'Impar' // após ? se coloca o resultado positivo e após : o negativo. Exemplo. Se o resto de 8/2 for = a 0, entao coloque PAR, se não, IMPAR.
 
 // Manipulando Strings
 
@@ -347,13 +329,40 @@ nome.substr(4, 2); // substr é usado com 2 paramentros ( ) o primeiro diz em qu
 let resultadoSplit= nome.split(" "); // Split transforma a STRING em ARRAY. o que estiver no parametro () é o que ele vai buscar pra dividir e transformar no conteudo do ARRAY. como usamos um espaço entre " " no paramentro, oq estiver antes e depois dos espaços vira elemento do array. No caso Marcos Vinicius - fica 1 array de 2 elementos [Marcos, Vinicius].
 console.log(resultadoSplit);
 
+let numbersTeste = 10.6560
+ 
+
+Number() // forma de transformar variavei em numeros, ele converte automaticamente para reais ou inteiros. substitui o int e Float.
+
+Number.parseFloat(numbersTeste); // Transforma a variavel em numero real - a variavel que vai ser transformada é colocada dentro de ()
+Number.parseInt(numbersTeste); // Transforma a variavel em numero Inteiro - a variavel que vai ser transformada é colocada dentro de ()
+numbersTeste.toString() // transforma a variavel em String.numbersTeste.toString() // transforma a variavel em String.
+numbersTeste.toFixed(2) // dentro de () se coloca o numero de casa decimais que desejamos. no numero 10.65430, seria mostrado 10.65.
+numbersTeste.toString() // transforma a variavel em String.
+
+
+// manipulando Arrays
+
+let ArrayTeste = ['sapato', 'camisa', 'chapeu', 'boné'];
+console.log(ArrayTeste);
+
+let resArrayTeste = ArrayTeste;
+
+resArrayTeste = ArrayTeste.join('/'); // Manipula o array, transformando ela em String e o que for colocado dentro de ("") sera o divisor de cada palavra.
+
+ArrayTeste.toString(); // Transforma o ARRAY em String, com cada palavra separado por virgula , .
+ArrayTeste.pop(); // Elimina o ultimo elemento do ARRAY.
+ArrayTeste.shift(); // Elimina o primeiro iten do ARRAY.
+ArrayTeste.push('cueca', 'meia') // Push adiciona um elemeneto ao seu array, agora CUECA tabem passa a ser um item do ARRAY.
+ArrayTeste[1] = "Chapeus"; // De forma direta, chamando o elemento pelo [], tabem se manipula ele. no exeplo chamei o item 1 e mudei para chapeus. caso eu coloque um numero que nao exista, ele ao inves de substituir, ira criar este item no array.
+ArrayTeste.splice(0,1) // SPLICE é usado para remover itens do ARRAY e () se coloca dois paramentros, o primeiro é a posição do item, 0, no segundo é quantos itens vão ser removidos a partir desta posição, coloquei 1, assim somente o item da posição 0 é removido.
+
+console.log(resArrayTeste);
+console.log(ArrayTeste);
 
 
 
-//Ternario em JS
 
-var x = 8
-var varNum = x % 2 == 0 ? 'Par' : 'Impar' // após ? se coloca o resultado positivo e após : o negativo. Exemplo. Se o resto de 8/2 for = a 0, entao coloque PAR, se não, IMPAR.
 
 
 
