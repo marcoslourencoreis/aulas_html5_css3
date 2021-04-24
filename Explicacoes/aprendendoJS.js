@@ -357,9 +357,14 @@ ArrayTeste.push('cueca', 'meia') // Push adiciona um elemeneto ao seu array, ago
 ArrayTeste[1] = "Chapeus"; // De forma direta, chamando o elemento pelo [], tabem se manipula ele. no exeplo chamei o item 1 e mudei para chapeus. caso eu coloque um numero que nao exista, ele ao inves de substituir, ira criar este item no array.
 ArrayTeste.splice(0,1) // SPLICE é usado para remover itens do ARRAY e () se coloca dois paramentros, o primeiro é a posição do item, 0, no segundo é quantos itens vão ser removidos a partir desta posição, coloquei 1, assim somente o item da posição 0 é removido.
 
+ArrayTeste.sort( ) // coloca os itens do ARRAY em ordem alfabetica
+ArrayTeste.reverse( ) // Se usado após o SORT, faz ficar em ordem alfabetica
+
+
 console.log(resArrayTeste);
 console.log(ArrayTeste);
 
+// praticando JS 
 
 
 
