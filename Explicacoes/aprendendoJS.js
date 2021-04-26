@@ -367,7 +367,7 @@ console.log(ArrayTeste);
 // praticando JS 
 
 
-
+// Estudos com prof G. Guanabara
 
 
 
