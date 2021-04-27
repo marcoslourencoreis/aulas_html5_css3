@@ -389,3 +389,4 @@ const max = Math.max(...numbers);
      
 console.log(min, max);
 
+// Novos testes com JS
