@@ -364,10 +364,28 @@ ArrayTeste.reverse( ) // Se usado após o SORT, faz ficar em ordem alfabetica
 console.log(resArrayTeste);
 console.log(ArrayTeste);
 
-// praticando JS 
+ 
 
 
-// Estudos com prof G. Guanabara
 
 
+// Aprendendendo funções matematicas em JS -- Math -
+
+
+let novoValor = Math.round(4.77); // round arredonda o valor, se a casa decimal for maior que 5, ele arredonda pra mais, se for menor que 5, ele vai arredondar pra menos
+novoValor = Math.floor(3.67); // floor força o arredondamento para baixo, mesmo se a casa decimal for maior que 5.
+novoValor = Math.ceil(3,23); // ceil força o arredondamento para cima, indepedente do valor na casa decimal.
+novoValor = Math.min(7,10,20,2,30) // min, ira mostrar qual o menor numero entre todos os que se encontram no ()
+novoValor = Math.max(7,10,20,2,30) // max, ira mostar qual o maior numero entre todos os que se encontram no ()
+novoValor = Math.random(); // random faz com q mostre um numero aleatorio entre 0 e 1. 
+novoValor = Math.random() * 10; // Desta forma, ele vai me gerar um numero aleatorio entre 0 e 9 porem vai usar as casas decimais.
+novoValor = Math.floor(Math.random() * 10); // Desta forma, ele vai me gerar um numero aleatorio entre 0 e 9. arredondado.
+
+console.log(novoValor);
+
+const numbers = [10, 20, 37, 61, 2, 89, 4];
+const min = Math.min(...numbers);
+const max = Math.max(...numbers);
+     
+console.log(min, max);
 
