@@ -389,4 +389,31 @@ const max = Math.max(...numbers);
      
 console.log(min, max);
 
-// Novos testes com JS
+
+
+
+// Trabalhando com intervalos em JS
+
+let timer;
+
+function comecar(){
+    timer = setInterval(showTime, 1000) // setInterval é uma funcao prorpia do JS pra se trabalhar com timer, (), o primeiro paramentro recebe a função a ser executada (Showtime), e o segundo é de qnto em qnto tempo em q vai ser atualizado tal funcao, em milesegundos, no caso 1S = 1000 ms.
+}
+
+function parar(){
+    clearInterval(timer) // Clear interval é uma funcao do JS que faz parar o evento do SetInterval, dentro de () vc passa o paramentro a ser interrompido. 
+}
+
+function showTime() {
+    let d = new Date(); // me da acesso a data, dessa forma ele pega a hora atual do navegador, e mostra de forma completa, fuso dia, etc.
+    let h = d.getHours(); // pega a hora atual com base no new date()
+    let m = d.getMinutes();  // pega o minuto atual com base no new date()
+    let s = d.getSeconds(); // pega os segundos atual com base no new date()
+    let txt = (`${h}:${m}:${s}`);
+
+    document.querySelector("#IntervalosJS").innerHTML = txt;
+}
+
+
+setTimeout() // funcao que espera um determinado tempo pra começar a executar a função. Dentro do paramentro passamos a função a ser executada e depois o tempo que vai levar pra ela começãr a ser executada. Ficando assim: setTimeout(funcao, tempo em Milesegundos).
+clearTimeout() // Interrempe a função do SerTimeout, em () é passado a variavel que representa o setTimeout a ser interrompido.
