@@ -409,11 +409,34 @@ function showTime() {
     let h = d.getHours(); // pega a hora atual com base no new date()
     let m = d.getMinutes();  // pega o minuto atual com base no new date()
     let s = d.getSeconds(); // pega os segundos atual com base no new date()
-    let txt = (`${h}:${m}:${s}`);
+    let txt = `${h}:${m}:${s}`;
 
     document.querySelector("#IntervalosJS").innerHTML = txt;
 }
 
 
-setTimeout() // funcao que espera um determinado tempo pra começar a executar a função. Dentro do paramentro passamos a função a ser executada e depois o tempo que vai levar pra ela começãr a ser executada. Ficando assim: setTimeout(funcao, tempo em Milesegundos).
-clearTimeout() // Interrempe a função do SerTimeout, em () é passado a variavel que representa o setTimeout a ser interrompido.
+// setTimeout() // funcao que espera um determinado tempo pra começar a executar a função. Dentro do paramentro passamos a função a ser executada e depois o tempo que vai levar pra ela começãr a ser executada. Ficando assim: setTimeout(funcao, tempo em Milesegundos).
+// clearTimeout() // Interrempe a função do SerTimeout, em () é passado a variavel que representa o setTimeout a ser interrompido.
+
+
+
+
+// Descontruindo Objetos em JS
+
+
+let PessoaObject = {
+    nome1: 'Marcos',
+    sobrenome: 'Reis',
+    idade: 28,
+    social: {
+        facebook: 'MarcosReis',
+        Instagram: "Marcos_Reis"
+    },
+    nomeCompleto: function(){
+        return `${this.nome} ${this.sobrenome}`;
+    }
+};   
+
+let { nome1:nome3, sobrenome, idade=0 } = PessoaObject; // para desconstruir, eu coloco em {} todos os elementos que eu quero do objeto e depois de = eu uso o nome do objeto referido. quanto eu uso : após o nome do elemento, eu estou renomeando ele, no caso nome1 passou a ser nome3. e idade, passou a ter valor padrao de 0. Se n tiver uma idade definida o padrao é utilizado.
+
+console.log(`meu nome é: ${nome3} ${sobrenome}, e eu tenho ${idade} anos.`);
