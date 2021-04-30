@@ -99,7 +99,7 @@ a {
 
 .sobreposicao:hover {
     opacity: 1;
-    transition: 2s;
+    transition: 0.6s;
 }
 
 .titulo {

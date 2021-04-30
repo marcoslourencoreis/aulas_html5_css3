@@ -420,7 +420,6 @@ function showTime() {
 
 
 
-
 // Descontruindo Objetos em JS
 
 
@@ -440,3 +439,42 @@ let PessoaObject = {
 let { nome1:nome3, sobrenome, idade=0 } = PessoaObject; // para desconstruir, eu coloco em {} todos os elementos que eu quero do objeto e depois de = eu uso o nome do objeto referido. quanto eu uso : após o nome do elemento, eu estou renomeando ele, no caso nome1 passou a ser nome3. e idade, passou a ter valor padrao de 0. Se n tiver uma idade definida o padrao é utilizado.
 
 console.log(`meu nome é: ${nome3} ${sobrenome}, e eu tenho ${idade} anos.`);
+
+
+// Desconstruir um Array em JS
+
+let DesconstruirArray = ["Arthur", "Souza", "2"]
+
+let [nome4, sobrenome4, idade4] = DesconstruirArray // Para descontruir um ARRAY eu tenho que dar um nome pra cada elemento, na ordem que ele aparece. caso eu n queira pegar algum elemento, eu deixo o espaço dele em branco entre , , (virgulas) = [nome4, , idade4] dessa forma ele n pegaria o souza.
+
+console.log(nome4, sobrenome4, idade4)
+
+
+function parimpar(n5){
+    return n5 % 2 == 0 ? "par" : "impar"
+    
+}
+
+let res2 = parimpar(22);
+
+console.log(res2);
+
+
+
+
+// Arrow Functions
+
+
+
+// funções tambem podem ser escritas da seguinte forma
+
+let somar3 = (x, y) => x + y; // Se ela for feita apenas uma ação, n preciso do {} e nem do return, mas caso eu use {}, o return passa a ser obrigatorio.
+
+console.log(somar3(5,7))
+
+let subtrair4 = (x=0, y=0) => { // Posso deixar pre definido os parametros, para caso ele n seja enviado, receber um valor padrao. no caso foi 0.
+    return x - y;
+}
+console.log(subtrair4(2,6))
+
+
