@@ -584,3 +584,5 @@ temp.then(function(resultado){
 })
 
 console.log(temp) 
+
+// Fletch em JS
