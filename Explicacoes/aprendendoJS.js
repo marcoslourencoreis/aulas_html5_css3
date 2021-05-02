@@ -312,7 +312,7 @@ let resultadoIndexOF = nome.indexOf("Marcos"); // IndexOF identifica se o parame
 console.log(resultadoIndexOF);
 
 
-let resultadoReplace = nome.replace("Vinicius", "Reis"); // replace faz a subistituição. No primeiro parametro fazemos a busca e no segundo damos a substituição. Busquei vinicius e substitui por Reis. Se ele n achar, permanece a original.. *Se atentar a acentros e maiusculas/minusculas.
+let resultadoReplace = nome.replace("Vinicius", "Reis"); // replace faz a subistituição. No primeiro parametro fazemos a busca e no segundo damos a substituição. Busquei vinicius e substitui por Reis. Se ele n achar, permanece a original.. *Se atentar a acentos e maiusculas/minusculas.
 console.log(resultadoReplace);
 
 let resultadoTrim = nome.trim(); // Função trim() remove os espaços dentro da String antes da primeira palavra e após a ultima. 
@@ -358,14 +358,14 @@ ArrayTeste[1] = "Chapeus"; // De forma direta, chamando o elemento pelo [], tabe
 ArrayTeste.splice(0,1) // SPLICE é usado para remover itens do ARRAY e () se coloca dois paramentros, o primeiro é a posição do item, 0, no segundo é quantos itens vão ser removidos a partir desta posição, coloquei 1, assim somente o item da posição 0 é removido.
 
 ArrayTeste.sort( ) // coloca os itens do ARRAY em ordem alfabetica
-ArrayTeste.reverse( ) // Se usado após o SORT, faz ficar em ordem alfabetica
-
+ArrayTeste.reverse( ) // Se usado após o SORT, faz ficar em ordem alfabetica reversa
 
 console.log(resArrayTeste);
 console.log(ArrayTeste);
 
- 
-
+let SliceTeste = "Marcos";
+let SliceTeste1 = SliceTeste.slice(0,3); // Slice ira pegar parte da string direcionado a ela, o primeiro parametro é a posicção de inicio, no caso 0, e o segundo é quantas "letras" ele vai buscar. se for negativo, começa da esquerda pra direita e se da somente o numero de casas, ficando slice(-3), vai pegar as 3 ultimas letras da direita pra esquerda.
+console.log(SliceTeste1);
 
 
 
@@ -478,3 +478,109 @@ let subtrair4 = (x=0, y=0) => { // Posso deixar pre definido os parametros, para
 console.log(subtrair4(2,6))
 
 
+// Operador Spread - tem o objetivo de juntar dois array ou objetos, tornando um só.
+
+let numeros2 = [1,2,3,4];
+
+let outros2 = [...numeros2,5,6,7,8] // o Spread é representado por 3 pontos ... junto com o nome da variavel que vai ser acrescida, no caso colocamos numeros2, junto a outros2.
+
+console.log(outros2);
+
+// Spread em objetos
+
+let info2 = {
+    nome: "Maria Isabel",
+    idade: 28,
+    };
+
+let info2Spread = {
+    ...info2, // acrescentamos o objeto desejado atraves dos ...
+    cidade: "São José dos Campos",
+    estado: "São Paulo"
+}
+
+console.log(info2Spread);
+
+
+// Usando REST - Rest permita que recebamos varios itens como parametros, tantos quantos o usuario mandar, ele tbm é representato pelos 3 pontos ..., porem ele é passado no parametro ().
+
+
+
+
+function adicionar2(nomes, ...novosNomes) {
+ let rest2 = [
+     ...rest1,
+     ...novosNomes
+ ];
+    return rest2
+    
+}
+
+let rest1 = ["Marcos", "Isabel", "Arthur"]
+
+let resNovo = adicionar2(rest1, "Carla", "Katia", "Vivaldo", "Ana")
+
+console.log(resNovo); 
+
+// outra forma de fazer
+
+let nomes4= ['Bonieky', 'Paulo'];
+
+adicionar = (...novosNomes) => {
+    nomes4 = [...nomes4, ...novosNomes];
+}
+
+adicionar('antonio','maria','pedro');
+
+console.log(nomes4);
+
+
+//String padStart e padEnd
+
+let StringPad = "56"
+
+console.log( StringPad.padEnd(5, "*"));
+console.log(StringPad.padStart(4, "-")) // O primeiro paramento eu digo o minimo de casas minha String deve ter, usei 5, no segundo eu digo qual letra, simbolo, etc, sera usado para completar o numero dito anteriormente, caso a string original nao atinja o valor. foi passado *, ficando 5 casas, 56*** = 56 + 3x o * pra comprar as 5 casas. o END diz pra preencher as ultimas casas. o Start as primeiras.
+
+
+
+// Aprendendo manipular JSON em JS
+
+let JsonTest = { 
+    nome: "Arthur",
+    Idade: 2,
+    Sexo: "Masculino"
+}
+
+let JsonParse = JSON.stringify(JsonTest); // JSON.stringify - transforma o objeto em STRING JSON = {"nome":"Arthur","Idade":2,"Sexo":"Masculino"} -- Dentro da proprieda eu passo a variavel a ser tratada
+
+console.log(JsonParse);
+
+// Passando de String JSON para Objeto
+
+let JsonString = '{"nome":"Marcos","Idade":28,"Sexo":"Masculino"}';
+
+let ResJsonString = JSON.parse(JsonString);
+
+console.log(ResJsonString);
+
+
+// Promise em JS
+
+function pegarTemperatura() {
+    return new Promise(function(resolve, reject){
+        console.log("pegando Temperatura");
+
+        setTimeout(function(){
+            resolve("40 na sombra")}, 2000);
+        })
+    
+}
+
+let temp = pegarTemperatura();
+
+temp.then(function(resultado){
+    console.log("A temperatura atual é: " + resultado)
+})
+
+console.log(temp) 
