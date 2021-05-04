@@ -617,3 +617,7 @@ function LoadPosts() {
 
 
     }
+
+    // JS com o Programador a bordo
+
+    
