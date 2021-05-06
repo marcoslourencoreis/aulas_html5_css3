@@ -184,7 +184,21 @@ console.log("ANO: "+ carro.ano); // Tambem é possivel concatenar pra que tenha 
 
 carro.ligar(); // pra acessar a função primeiro eu chamo o objeto (carro) e depois a função que eu quero, no caso foi ligar. ficando: carro.ligar();
 
+// Juntando 2 objetos em uma variavel com o Object.assign
+var Object1 = {
+    Nome: "Marcos",
+    Idade: 28,
+    Estado: "SP"
+}
 
+var object2 = {
+    Sexo: "Masculino",
+    Altura: 1.86,
+    Peso: "86kg"
+}
+
+var ObejectAssign = Object.assign({}, Object1, object2); // Se deve armazenar em uma nova variavel, depois usar Object.Assign({}, objeto, objeto2) - se cria {} pra dizer que vai ser um novo objeto e apos o nome dos objetos que serao unificados
+console.log(ObejectAssign)
 
 
 
@@ -273,7 +287,7 @@ conteudo += "</ul>";
 document.getElementById("DemoArray").innerHTML = conteudo; 
 
 
-
+// tambem temos a opção de usar um OFF no lugar do IN, o off vai percorrer os valores do array a ele referenciado.
 
 
 
