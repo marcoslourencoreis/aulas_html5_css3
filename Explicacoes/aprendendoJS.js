@@ -197,7 +197,7 @@ var object2 = {
     Peso: "86kg"
 }
 
-var ObejectAssign = Object.assign({}, Object1, object2); // Se deve armazenar em uma nova variavel, depois usar Object.Assign({}, objeto, objeto2) - se cria {} pra dizer que vai ser um novo objeto e apos o nome dos objetos que serao unificados
+var ObejectAssign = Object.assign({}, Object1, object2); // Se deve armazenar em uma nova variavel, depois usar Object.Assign({}, objeto, objeto2) - se cria {} pra dizer que vai ser um novo objeto e apos o nome dos objetos que serao unificados. Se n usarmos {}, ele ira acrescentar ao primeiro Objeto passado, que no exemplo seria Object1 
 console.log(ObejectAssign)
 
 
