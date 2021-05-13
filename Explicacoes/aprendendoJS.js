@@ -601,7 +601,10 @@ console.log(temp)
 
 // Fetch em JS
 
-function LoadPosts() {
+
+// DAQUI
+
+ function LoadPosts() {
     document.getElementById("posts").innerHTML = "carregando";
 
     fetch('https://jsonplaceholder.typicode.com/posts')
@@ -618,6 +621,8 @@ function LoadPosts() {
         });
 }
 
+// ATE AQUI, pode ser substituido, usando async e await. conforme a func LoadPostsAsync
+
     function montarblog(lista){
         let html = "";
 
@@ -632,11 +637,26 @@ function LoadPosts() {
 
     }
 
-    // JS com o Programador a bordo
+  // USando async e await
 
+  async function LoadPostsAsync() {
+    document.getElementById("posts2").innerHTML = "carregando";
 
-    // Escopo de teste
+    let req = await fetch('https://jsonplaceholder.typicode.com/posts');
+    let Json = await req.json();
 
+    montarblog2(Json);
 
-    // introdução ao node
-    
+}
+
+function montarblog2(lista){
+    let html = "";
+
+    for(let i in lista){
+        html += "<h3>"+lista[i].title+"</h3>";
+        html += lista[i].body+"<br/>"
+        html += "<hr/>"
+    }
+
+    document.getElementById("posts2").innerHTML = html;
+} 
