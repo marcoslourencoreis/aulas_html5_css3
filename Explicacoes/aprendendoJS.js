@@ -660,3 +660,21 @@ function montarblog2(lista){
 
     document.getElementById("posts2").innerHTML = html;
 } 
+
+//Thumbnails em JS
+
+function mostrar1(){
+    let reader = new FileReader;
+    let imagem = document.getElementById('imagem1').files[0];
+
+    reader.onloadend = function (){
+        let imag = document.createElement('img');
+        imag.src = reader.result;
+        imag.width = 200;
+
+        document.getElementById("AreaIMG").appendChild(imag); 
+    }
+
+    reader.readAsDataURL(imagem)
+
+}
