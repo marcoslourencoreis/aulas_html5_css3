@@ -678,3 +678,5 @@ function mostrar1(){
     reader.readAsDataURL(imagem)
 
 }
+
+// Iniciando os estudos
