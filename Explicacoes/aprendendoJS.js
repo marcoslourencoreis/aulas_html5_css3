@@ -684,3 +684,5 @@ function mostrar1(){
 // Semana de provas
 
 // Fazendo o projeto de pizzas
+
+// Reforçando os conceitos
