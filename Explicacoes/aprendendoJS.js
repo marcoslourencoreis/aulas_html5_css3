@@ -686,3 +686,5 @@ function mostrar1(){
 // Fazendo o projeto de pizzas
 
 // Reforçando os conceitos
+
+// Semana JS Roger Mello
