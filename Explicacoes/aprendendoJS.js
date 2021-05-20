@@ -688,3 +688,5 @@ function mostrar1(){
 // Reforçando os conceitos
 
 // Semana JS Roger Mello
+
+// LIVE Marco Bruno
