@@ -698,3 +698,5 @@ function mostrar1(){
 // Curso Udemy
 
 // Stack - JS - React - Node s2
+
+// Reforçando conceitos
