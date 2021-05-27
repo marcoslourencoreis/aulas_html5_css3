@@ -700,3 +700,5 @@ function mostrar1(){
 // Stack - JS - React - Node s2
 
 // Reforçando conceitos
+
+// Te amo vó 
