@@ -701,4 +701,6 @@ function mostrar1(){
 
 // Reforçando conceitos
 
-// Te amo vó 
+// Te amo vó - 
+
+// Voltando aos estudos.
