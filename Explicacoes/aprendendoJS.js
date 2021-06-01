@@ -686,9 +686,9 @@ function mostrar1(){
 // Fazendo o projeto de pizzas
 
 // Reforçando os conceitos
-
+'
 // Semana JS Roger Mello
-
+'
 // LIVE Marco Bruno
 
 // DevMedia
@@ -708,4 +708,7 @@ function mostrar1(){
 // Teste
 
 // Retomando os estudos.
+
+// 02/06/2021 - Velorio da minha linda avó. Te amo
+
 
