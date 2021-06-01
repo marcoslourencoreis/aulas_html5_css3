@@ -706,3 +706,6 @@ function mostrar1(){
 // Voltando aos estudos.
 
 // Teste
+
+// Retomando os estudos.
+
