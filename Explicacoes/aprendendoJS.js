@@ -718,4 +718,6 @@ function mostrar1(){
 // Retomando as aulas Cod3r Br ....
 // JS > React > Node - Preciso focar
 
-// Cusrso WebModerno JS
+// Curso WebModerno JS
+
+// Dia de ficar com o Arthur =)
