@@ -731,3 +731,5 @@ function mostrar1(){
 // Revisao JS
 
 // Revendo conceitos 
+
+// coder BR Funções
