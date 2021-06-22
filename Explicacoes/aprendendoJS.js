@@ -739,3 +739,5 @@ function mostrar1(){
 // Continuação CODER UDEMY
 
 // Hosting
+
+// Closures 
