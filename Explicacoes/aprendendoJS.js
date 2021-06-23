@@ -743,3 +743,5 @@ function mostrar1(){
 // Closures 
 
 // React
+
+// Finalizando modolu 1 Coder BR (revisao de conceitos)
