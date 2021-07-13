@@ -779,3 +779,5 @@ function mostrar1(){
 // Coder parte 5 cont
 
 // Coder parte 5 cont/final
+
+//Coder parte 6
