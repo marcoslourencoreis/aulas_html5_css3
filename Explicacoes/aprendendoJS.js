@@ -679,105 +679,37 @@ function mostrar1(){
 
 }
 
-// Iniciando os estudos na faculdade cruzeiro do SUL.
+//*** */ funções tambem podem ser escritas da seguinte forma
 
-// Semana de provas
+let somar3 = (x, y) => x + y; // Se ela for feita apenas uma ação, n preciso do {} e nem do return, mas caso eu use {}, o return passa a ser obrigatorio.
 
-// Fazendo o projeto de pizzas
+console.log(somar3(5,7))
 
-// Reforçando os conceitos
+let subtrair4 = (x=0, y=0) => { // Posso deixar pre definido os parametros, para caso ele n seja enviado, receber um valor padrao. no caso foi 0.
+    return x - y;
+}
+console.log(subtrair4(2,6))
 
-// Semana JS Roger Mello
 
-// LIVE Marco Bruno
+// Operador Spread - tem o objetivo de juntar dois array ou objetos, tornando um só.
 
-// DevMedia
+let numeros2 = [1,2,3,4];
 
-// Origamid
+let outros2 = [...numeros2,5,6,7,8] // o Spread é representado por 3 pontos ... junto com o nome da variavel que vai ser acrescida, no caso colocamos numeros2, junto a outros2.
 
-// Curso Udemy
+console.log(outros2);
 
-// Stack - JS - React - Node s2
+// Spread em objetos
 
-// Reforçando conceitos
+let info2 = {
+    nome: "Maria Isabel",
+    idade: 28,
+    };
 
-// Te amo vó - 
+let info2Spread = {
+    ...info2, // acrescentamos o objeto desejado atraves dos ...
+    cidade: "São José dos Campos",
+    estado: "São Paulo"
+}
 
-// Voltando aos estudos.
-
-// Teste
-
-// Retomando os estudos.
-
-// 02/06/2021 - Velorio da minha linda avó. Te amo
-
-// descansando em memoria da minha vó.
-
-//teste
-
-// Retomando as aulas Cod3r Br ....
-// JS > React > Node - Preciso focar
-
-// Curso WebModerno JS
-
-// Dia de ficar com o Arthur =)
-
-// Coder BR
-
-// Retomando 
-
-// JS Mais um dia
-
-// Revisao JS
-
-// Revendo conceitos 
-
-// coder BR Funções
-
-// Ainda revendo conceitos
-
-// Continuação CODER UDEMY
-
-// Hosting
-
-// Closures 
-
-// React
-
-// Finalizando modolu 1 Coder BR (revisao de conceitos)
-
-// Programador a bordo
-
-// Coder BR parte 2
-
-// Coder BR part 2 cont.
-
-//
-
-//
-
-// Node + Typscript
-
-// Coder parte 3
-
-// Coder parte 3 cont
-
-// Coder parte 4
-
-// coder parte 4 cont
-
-// Coder part 4 cont
-
-// Coder parte 5
-
-// Coder parte 5 cont
-
-// Ingles For Devs - Igor Oliveira
-
-// Coder part 5 cont
-
-// Coder parte 5 cont
-
-// Coder parte 5 cont/final
-
-//Coder parte 6
+console.log(info2Spread);
