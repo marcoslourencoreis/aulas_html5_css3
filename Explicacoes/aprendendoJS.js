@@ -719,3 +719,5 @@ console.log(info2Spread);
 // 7 Projetos em 7 dias B7web
 
 // -------
+
+// Retomando Node + TS
