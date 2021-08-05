@@ -716,23 +716,3 @@ console.log(info2Spread);
 
 // Aguardando modulos Node
 
-// 7 Projetos em 7 dias B7web
-
-// -------
-
-// Retomando Node + TS ....
-
-//////
-
-//
-
-//
-
-//
-//
-
-///
-
-/*///*
-
-zxz
