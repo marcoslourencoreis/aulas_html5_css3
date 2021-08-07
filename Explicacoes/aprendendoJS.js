@@ -719,3 +719,5 @@ console.log(info2Spread);
 cd desktop
 
 ///
+
+// Sem motivação
