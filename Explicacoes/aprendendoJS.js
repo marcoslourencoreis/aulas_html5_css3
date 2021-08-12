@@ -723,3 +723,5 @@ cd desktop
 // Relambrando
 
 // Node
+
+// Retomando
