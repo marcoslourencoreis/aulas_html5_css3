@@ -727,4 +727,4 @@ cd desktop
 // Retomando
 // Roger Melo
 
-// Fluencia JS - Roger Melo - 1K HAJA GRANA
+// Fluencia JS - Roger Melo - 
