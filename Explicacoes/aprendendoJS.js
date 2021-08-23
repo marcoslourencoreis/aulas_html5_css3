@@ -727,4 +727,4 @@ cd desktop
 // Retomando
 // Roger Melo
 
-// Fluencia JS - Roger Melo - Javascript
+// Fluencia JS - Roger Melo - JavaScript
