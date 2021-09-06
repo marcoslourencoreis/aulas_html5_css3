@@ -728,3 +728,5 @@ cd desktop
 // Roger Melo
 
 // Fluencia em JS
+
+// Banco de dados SQL
